@@ -8,7 +8,7 @@ $("#currentDay").text(moment().format("dddd, MMMM Do"));
 $(document).ready(function () {
   saveBtn.on("click", function () {
     // Getting values of content on textarea and time on div
-    var text = $(this).siblings("#content").val();
+    var text = $(this).siblings(".description").val().trim();
     console.log(text);
     var time = $(this).parent().attr("id");
 
@@ -44,15 +44,15 @@ $(document).ready(function () {
   }
 
   // Getting data from local storage if it exists
-  $("#hour9 #content").val(localStorage.getItem("hour9"));
-  $("#hour10 #content").val(localStorage.getItem("hour10"));
-  $("#hour11 #content").val(localStorage.getItem("hour11"));
-  $("#hour12 #content").val(localStorage.getItem("hour12"));
-  $("#hour13 #content").val(localStorage.getItem("hour13"));
-  $("#hour14 #content").val(localStorage.getItem("hour14"));
-  $("#hour15 #content").val(localStorage.getItem("hour15"));
-  $("#hour16 #content").val(localStorage.getItem("hour16"));
-  $("#hour17 #content").val(localStorage.getItem("hour17"));
+  $("#hour9 .description").val(localStorage.getItem("hour9"));
+  $("#hour10 .description").val(localStorage.getItem("hour10"));
+  $("#hour11 .description").val(localStorage.getItem("hour11"));
+  $("#hour12 .description").val(localStorage.getItem("hour12"));
+  $("#hour13 .description").val(localStorage.getItem("hour13"));
+  $("#hour14 .description").val(localStorage.getItem("hour14"));
+  $("#hour15 .description").val(localStorage.getItem("hour15"));
+  $("#hour16 .description").val(localStorage.getItem("hour16"));
+  $("#hour17 .description").val(localStorage.getItem("hour17"));
 
   colorBlocks();
 });

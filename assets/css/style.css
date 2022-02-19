@@ -4,6 +4,8 @@ body {
   line-height: 1;
 }
 
+/* Text area styling begins */
+
 textarea {
   background: transparent;
   border: none;
@@ -13,6 +15,10 @@ textarea {
   padding: 10px;
 }
 
+/* Text area styling ends */
+
+/* Header Styling Begins*/
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -20,6 +26,10 @@ textarea {
   border-radius: 0;
   border-bottom: 10px solid black;
 }
+
+/* Header Styling Ends */
+
+/* Timeblock Styling Begins */
 
 .description {
   white-space: pre-wrap;
@@ -70,3 +80,5 @@ textarea {
   transition: all 0.3s ease-in-out;
   color: #000000;
 }
+
+/* Timeblock Styling Ends */
